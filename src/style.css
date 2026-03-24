@@ -83,6 +83,35 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#mode-switcher {
+  display: flex;
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mode-btn {
+  background: transparent;
+  color: #888;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mode-btn:hover {
+  color: #ccc;
+}
+
+.mode-btn.active {
+  background: #4f8cff;
+  color: #fff;
 }
 
 #status {
