@@ -1,0 +1,4 @@
+node_modules/
+dist/
+public/gesture_recognizer.task
+public/mediapipe-wasm/

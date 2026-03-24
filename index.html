@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speaking Camera</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="layout">
+    <div id="main">
+      <div id="video-container">
+        <video id="webcam" autoplay playsinline></video>
+        <div id="gesture-overlay"></div>
+      </div>
+      <div id="controls">
+        <div id="status">Click "Start Camera" to begin</div>
+        <button id="toggle-btn">Start Camera</button>
+      </div>
+    </div>
+    <aside id="sidebar">
+      <h2>Supported Gestures</h2>
+      <ul id="gesture-list"></ul>
+    </aside>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
